@@ -24,10 +24,8 @@ h2 {
   border-radius: 5px;
 }
 
-
 i.material-icons, p{
-  line-height: 1.5rem;
-  
+  line-height: 1.5rem; 
 }
 
 i.material-icons{
@@ -78,6 +76,10 @@ i.fa-twitter-square{
   color:dodgerblue;
 }
 
+i:hover{
+  font-size: 3rem;
+}
+
 @media print{
   body, h1{
     color:black;
@@ -89,7 +91,7 @@ i.fa-twitter-square{
   }
 
   h2{
-    background-color: white;
+    background-color:unset;
   }
 
   a h2, .topo{
