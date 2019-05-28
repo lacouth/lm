@@ -68,6 +68,7 @@ main {
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
+  margin: 2rem;
 }
 
 .fa{
@@ -112,6 +113,24 @@ main .service p {
 /* footer */
 footer {
   background-color: #ecece2;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+}
+
+ .about{
+  flex-basis: 0;
+}
+
+.social ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.social li{
+  list-style: none;
+  
 }
 
 footer section.social a {
