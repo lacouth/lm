@@ -71,15 +71,19 @@ main {
 }
 
 .fa{
-  /* font-size: 5rem; */
+  font-size: 3em;
+  margin: auto;
 }
 
 main .service .circle-icon {
   background-color: #fed136;
   color: #fff;
-  font-size: 2rem;
   border-radius: 50%;
-  width: 4px;
+  width: 6em;
+  height: 6em;
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
 
 .service{
