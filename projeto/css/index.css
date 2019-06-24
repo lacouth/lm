@@ -1,0 +1,110 @@
+
+/* MOBILE FIRST - INICIANDO O LAYOUT PARA UMA TELA DE 360X400 */
+
+.main{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 5fr 1fr;
+    grid-template-areas:"logo" 
+                        "header"
+                        "landing"
+                        "footer";
+}
+
+.logo{
+    grid-area: logo;
+    background-image: url('../images/main_cupcakes.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 40%;
+    height: auto;
+}
+
+.header{
+    grid-area: header;
+    background-color: #a25857;
+}
+
+.header ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header li{
+    list-style: none;
+    padding: 0.5rem;
+    border-bottom: 0.5px solid white;
+}
+
+.header li:last-child{
+    border: 0px;
+}
+
+.header li a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.header li:first-child a{
+    color: black;
+}
+
+.header a:hover{
+    cursor: pointer;
+    color: black;
+}
+
+
+.landing{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    grid-area: landing;
+    background-color: #547764;
+}
+
+.section_name{
+    width: 40%;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+
+}
+.section_name div{
+    
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.section_name div::after {
+        border: 2px solid black;
+        content: '';
+        height: 0;
+        position: absolute;
+        width: 20%;
+        display: block;
+        bottom: 0;
+}
+
+
+.footer{
+    grid-area: footer;
+    background-color: #393733;
+}
