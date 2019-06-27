@@ -1,5 +1,5 @@
 
-/* MOBILE FIRST - INICIANDO O LAYOUT PARA UMA TELA DE 360X400 */
+/* MOBILE FIRST - INICIANDO O LAYOUT PARA UMA TELA DE 360 */
 
 .main{
     width: 100%;
@@ -68,24 +68,41 @@
 
 .landing{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     grid-area: landing;
-    background-color: #547764;
+    
 }
 
+p {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.25rem;
+    margin: 2rem;
+}
+
+.black{
+    color: #2f1129;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 .section_name{
-    width: 40%;
-    margin-top: 2rem;
-    font-size: 2rem;
+    margin: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px black;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.section_name div{
-    
+.section_name span{
     padding: 1rem 3rem;
     display: flex;
     justify-content:space-around;
@@ -93,14 +110,61 @@
     border: 2px solid white;
 }
 
-.section_name div::after {
-        border: 2px solid black;
+.section_name::after {
+        border: 4px solid;
         content: '';
         height: 0;
-        position: absolute;
-        width: 20%;
-        display: block;
-        bottom: 0;
+        width: 50%;
+        margin: -4px;
+}
+
+.section_presentation{
+    color: #547764;
+    background-color: #547764;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.section_presentation .section_name::after{
+    border-color: #547764;
+}
+
+img{
+    margin: 3rem 0;
+    width: 100%;
+
+}
+
+.section_description{
+    background-color: #a25857;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.section_description .section_name::after{
+    border-color: #a25857;
+}
+
+.section_mission{
+    background-color: #547764;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.section_mission .section_name::after{
+    border-color: #547764;
 }
 
 
